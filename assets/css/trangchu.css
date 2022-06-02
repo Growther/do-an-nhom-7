@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav , .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block ;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+   top: 100%;
+   left: 0px;
+    min-width: 160px;
+   display: none; 
+   position: absolute;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+
+#header #search {
+    border: 1px solid #333333;
+    border-radius: 12px;
+    width: 20%;
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+#header #search input {
+    height: 32px;
+    width: 85%;
+    padding-left: 10px;
+    border: none;
+     
+}
+
+#header .search-button .fa-solid  {
+    color: #330033;
+    font-size: 20px;
+    line-height: 32px; 
+}
+
+#search input:focus, #search input:active, #search input {
+    outline: 0;
+    outline-style: none;
+    outline-width: 0;
+    border-radius: 10px 0px 0px 10px;
+    font-family: Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif; 
+}
+
+#header #register {
+    display: inline-block;
+    margin-left: 250px;
+    text-decoration: none;
+    height: 46px;
+}
+
+#header #register a {
+    line-height: 46px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0px 24px;
+}
+
+#header #register a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#header #cart {
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    height: 46px;
+}
+
+#header #cart a {
+    line-height: 46px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0px 24px;
+}
+
+#header #cart a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/DO AN NHOM 8/assets/img/DSCF5073-55f.jpg') top center / cover no-repeat;
+}
+
+#slider .text-cotent {
+    position: absolute ;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 100px;
+    color: #f44336;    
+    font-family: 'My Soul', cursive;
+}
+
+#slider .text-description {
+    font-size: 70px;
+    margin-top: 25px;
+    font-family: 'PT Serif', serif;
+    color: red;
+
+}
+
+#content .about-section {
+    background-color: #EED5B7;
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px; 
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 24px;
+    color: purple;
+    font-family: 'Libre Bodoni', serif;
+}
+
+#content .content-section2 {
+    width: 800px;
+    padding: 64px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-section2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#content .content-section2 a:hover {
+    color: #BEBEBE;
+    background-color: #1C1C1C;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #6E7B8B;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: #FFE1FF;
+    text-decoration: none;
+}
+
+#footer .social-list a:hover {
+    color: #D8BFD8;
+}
+
+#footer .copyright  {
+    margin-top: 15px;
+}
+
+@media (max-width : 820px) {
+    #main {
+        width: 821px;
+    }
+}
